@@ -4,164 +4,152 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Volente — Interior Design & Construction, Shillong</title>
-<meta name="description" content="Volente — premium interior design, construction, wall panelling, modular kitchens, UPVC doors & windows, and real estate solutions in Shillong, Meghalaya.">
+<meta name="description" content="Volente — interior design, construction and property solutions in Shillong, Meghalaya. Designed and built under one roof.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --black:#0B0B0D;
-    --black-2:#121214;
-    --black-3:#1A1A1E;
-    --gold:#C6A15B;
-    --gold-light:#E9CE8F;
-    --gold-deep:#8C6D2F;
-    --ivory:#F4EEE1;
-    --muted:#A9A49A;
-    --line:rgba(198,161,91,.22);
-    --serif:'Playfair Display',Georgia,serif;
+    --black:#0D0D0F;
+    --ink:#131316;
+    --gold:#A68C52;
+    --gold-soft:#C6B184;
+    --ivory:#ECE7D8;
+    --muted:#8F8A7D;
+    --hair:rgba(166,140,82,.18);
+    --serif:'Cormorant Garamond',Georgia,serif;
     --sans:'Inter',-apple-system,'Segoe UI',sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body{background:var(--black);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{display:block;max-width:100%}
   a{color:inherit;text-decoration:none}
   ::selection{background:var(--gold);color:var(--black)}
-
-  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-  .eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15}
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+  .narrow{max-width:760px;margin:0 auto}
+  .label{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;font-weight:400}
+  h1,h2{font-family:var(--serif);font-weight:400;line-height:1.12}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
   .reveal.visible{opacity:1;transform:none}
 
-  /* ---------- NAV ---------- */
-  header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
-  header.scrolled{background:rgba(11,11,13,.92);backdrop-filter:blur(12px);border-color:var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .brand{font-family:var(--serif);font-size:26px;letter-spacing:.14em;color:var(--ivory)}
-  .brand span{color:var(--gold)}
-  .nav-links{display:flex;gap:36px;align-items:center}
-  .nav-links a{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);transition:color .3s}
-  .nav-links a:hover{color:var(--gold-light)}
-  .nav-phone{border:1px solid var(--gold);color:var(--gold-light)!important;padding:10px 20px;border-radius:2px;transition:background .3s,color .3s!important}
-  .nav-phone:hover{background:var(--gold);color:var(--black)!important}
-  .burger{display:none;background:none;border:0;cursor:pointer;padding:10px;z-index:110}
-  .burger span{display:block;width:26px;height:2px;background:var(--gold);margin:6px 0;transition:.35s}
-  .mobile-menu{position:fixed;inset:0;background:rgba(11,11,13,.98);z-index:105;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity .4s}
+  /* NAV */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .5s,border-color .5s;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(13,13,15,.9);backdrop-filter:blur(14px);border-color:var(--hair)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{font-family:var(--serif);font-size:24px;letter-spacing:.22em;font-weight:500}
+  .brand i{font-style:normal;color:var(--gold)}
+  .nav-links{display:flex;gap:44px;align-items:center}
+  .nav-links a{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);transition:color .35s}
+  .nav-links a:hover{color:var(--ivory)}
+  .nav-links a.tel{color:var(--gold-soft);border-bottom:1px solid var(--hair);padding-bottom:3px}
+  .burger{display:none;background:none;border:0;cursor:pointer;padding:12px;z-index:110}
+  .burger span{display:block;width:24px;height:1px;background:var(--ivory);margin:7px 0;transition:.35s}
+  .mobile-menu{position:fixed;inset:0;background:rgba(13,13,15,.98);z-index:105;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;opacity:0;pointer-events:none;transition:opacity .45s}
   .mobile-menu.open{opacity:1;pointer-events:auto}
-  .mobile-menu a{font-family:var(--serif);font-size:30px;color:var(--ivory)}
-  .mobile-menu a.gold{color:var(--gold)}
+  .mobile-menu a{font-family:var(--serif);font-size:34px;font-weight:400}
+  .mobile-menu a.tel{font-size:20px;color:var(--gold-soft);font-family:var(--sans);letter-spacing:.2em}
 
-  /* ---------- HERO ---------- */
-  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+  /* HERO */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end}
   .hero-bg{position:absolute;inset:0}
-  .hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
-  @keyframes heroZoom{to{transform:scale(1)}}
-  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,13,.55) 0%,rgba(11,11,13,.15) 40%,rgba(11,11,13,.88) 100%)}
-  .hero-content{position:relative;z-index:2;padding-bottom:12vh;width:100%}
-  .hero h1{font-size:clamp(44px,7.5vw,104px);max-width:14ch;margin-bottom:24px}
-  .hero h1 em{font-style:italic;color:var(--gold-light)}
-  .hero p.sub{max-width:52ch;color:#D8D2C4;font-size:clamp(15px,1.6vw,18px);margin-bottom:36px}
-  .cta-row{display:flex;gap:16px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:16px 32px;border-radius:2px;transition:transform .3s,background .3s,color .3s,border-color .3s;cursor:pointer;border:1px solid transparent}
-  .btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%,var(--gold-deep));color:#141414;font-weight:600}
-  .btn-gold:hover{transform:translateY(-2px)}
-  .btn-ghost{border-color:rgba(244,238,225,.35);color:var(--ivory)}
-  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-light)}
-  .hero-meta{position:relative;z-index:2;display:flex;gap:40px;padding:26px 0;border-top:1px solid var(--line);margin-top:8vh;flex-wrap:wrap}
-  .hero-meta div{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted)}
-  .hero-meta div b{display:block;color:var(--gold-light);font-size:13px;margin-top:6px;letter-spacing:.12em}
+  .hero-bg img{width:100%;height:100%;object-fit:cover}
+  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.5),rgba(13,13,15,.05) 45%,rgba(13,13,15,.92))}
+  .hero-inner{position:relative;z-index:2;padding-bottom:14vh;width:100%}
+  .hero h1{font-size:clamp(46px,7vw,96px);max-width:12ch;margin:0 0 30px}
+  .hero h1 em{font-style:italic;color:var(--gold-soft)}
+  .hero p{max-width:46ch;color:#CFC9B9;font-size:16px;margin-bottom:44px}
+  .quiet-link{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ivory);border-bottom:1px solid var(--gold);padding-bottom:10px;transition:color .35s,gap .35s}
+  .quiet-link:hover{color:var(--gold-soft);gap:20px}
 
-  /* ---------- MARQUEE ---------- */
-  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--black-2);padding:20px 0}
-  .marquee-track{display:flex;gap:56px;width:max-content;animation:scroll 30s linear infinite}
-  .marquee-track span{font-family:var(--serif);font-size:20px;font-style:italic;color:var(--gold);white-space:nowrap}
-  .marquee-track span i{font-style:normal;color:var(--muted);margin-right:56px;font-size:14px}
-  @keyframes scroll{to{transform:translateX(-50%)}}
+  /* STATEMENT */
+  .statement{padding:170px 0;text-align:center}
+  .statement p{font-family:var(--serif);font-size:clamp(26px,3.6vw,44px);line-height:1.45;color:#DCD5C2;max-width:26ch;margin:0 auto}
+  .statement p em{font-style:italic;color:var(--gold-soft)}
 
-  /* ---------- SECTIONS ---------- */
-  section{padding:110px 0}
-  .sec-head{max-width:720px;margin-bottom:64px}
-  .sec-head h2{font-size:clamp(32px,4.5vw,56px);margin-bottom:18px}
-  .sec-head h2 em{font-style:italic;color:var(--gold-light)}
-  .sec-head p{color:var(--muted);font-size:16px}
+  /* WORK */
+  #work{padding:40px 0 170px}
+  .work-head{text-align:center;margin-bottom:110px}
+  .work-head h2{font-size:clamp(34px,4.5vw,58px)}
+  .work-head h2 em{font-style:italic;color:var(--gold-soft)}
+  .work{margin-bottom:150px}
+  .work:last-child{margin-bottom:0}
+  .work img{width:100%;height:clamp(340px,72vh,680px);object-fit:cover}
+  .work figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;margin-top:30px;flex-wrap:wrap}
+  .work .story{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,27px);color:#D8D1BE;max-width:30ch;line-height:1.5}
+  .work .meta{text-align:right;flex-shrink:0}
+  .work .meta h3{font-family:var(--serif);font-weight:500;font-size:23px;letter-spacing:.04em;margin-bottom:8px}
+  .work .meta p{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
 
-  /* ---------- WORK ---------- */
-  .work-card{margin-bottom:110px}
-  .work-card:last-child{margin-bottom:0}
-  .work-img{overflow:hidden;border-radius:3px;position:relative}
-  .work-img img{width:100%;height:clamp(320px,62vh,620px);object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.6,.2,1)}
-  .work-card:hover .work-img img{transform:scale(1.04)}
-  .work-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,11,13,.45));pointer-events:none}
-  .work-cap{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;padding-top:26px}
-  .work-story{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.4vw,26px);color:#E4DCCB;max-width:34ch;line-height:1.5}
-  .work-name{text-align:right}
-  .work-name h3{font-size:22px;letter-spacing:.06em;margin-bottom:6px}
-  .work-name p{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
-
-  /* ---------- SERVICES ---------- */
-  #services{background:var(--black-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .svc-list{border-top:1px solid var(--line)}
-  .svc{display:grid;grid-template-columns:80px 1fr 2fr auto;gap:28px;align-items:center;padding:34px 0;border-bottom:1px solid var(--line);transition:background .3s,padding .3s}
-  .svc:hover{background:rgba(198,161,91,.05);padding-left:16px;padding-right:16px}
-  .svc-num{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:20px}
-  .svc h3{font-size:clamp(20px,2.6vw,30px);font-weight:600}
+  /* SERVICES */
+  #services{padding:150px 0;border-top:1px solid var(--hair)}
+  .svc-head{margin-bottom:90px}
+  .svc-head h2{font-size:clamp(34px,4.5vw,58px);margin-bottom:20px}
+  .svc-head h2 em{font-style:italic;color:var(--gold-soft)}
+  .svc-head p{color:var(--muted);max-width:56ch;font-size:16px}
+  .svc{display:grid;grid-template-columns:64px 1fr 1.4fr;gap:36px;padding:38px 0;border-top:1px solid var(--hair);align-items:baseline}
+  .svc:last-child{border-bottom:1px solid var(--hair)}
+  .svc .n{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:19px}
+  .svc h3{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.6vw,30px);letter-spacing:.02em}
   .svc p{color:var(--muted);font-size:15px;max-width:52ch}
-  .svc-arrow{color:var(--gold);font-size:22px;transition:transform .3s}
-  .svc:hover .svc-arrow{transform:translateX(8px)}
 
-  /* ---------- ABOUT ---------- */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-  .about-img{position:relative}
-  .about-img img{border-radius:3px;height:560px;width:100%;object-fit:cover}
-  .about-img::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:3px;z-index:-1}
-  .about-copy h2{font-size:clamp(32px,4.5vw,52px);margin-bottom:24px}
-  .about-copy h2 em{font-style:italic;color:var(--gold-light)}
-  .about-copy p{color:#CFC8B8;margin-bottom:18px;font-size:16px}
-  .about-sign{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--gold-light);margin-top:28px}
+  /* ABOUT */
+  #about{padding:170px 0}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+  .about-img img{height:600px;width:100%;object-fit:cover}
+  .about-copy h2{font-size:clamp(34px,4.5vw,56px);margin-bottom:34px}
+  .about-copy h2 em{font-style:italic;color:var(--gold-soft)}
+  .about-copy p{color:#BDB6A4;margin-bottom:22px;font-size:16px;max-width:46ch}
+  .sign{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--gold-soft);margin-top:36px}
 
-  /* ---------- CONTACT ---------- */
-  #contact{background:var(--black-2);border-top:1px solid var(--line)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:70px}
-  .c-item{margin-bottom:30px}
-  .c-item h4{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-  .c-item p,.c-item a{font-size:17px;color:var(--ivory)}
-  .c-item a:hover{color:var(--gold-light)}
-  .wa-big{display:inline-flex;align-items:center;gap:14px;margin-top:8px;background:#1FA855;color:#fff;font-weight:500;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:18px 34px;border-radius:2px;transition:transform .3s,background .3s}
-  .wa-big:hover{transform:translateY(-2px);background:#25c05e}
-  form .field{margin-bottom:20px}
-  form label{display:block;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-  form input,form select,form textarea{width:100%;background:var(--black-3);border:1px solid var(--line);color:var(--ivory);padding:15px 18px;font-family:var(--sans);font-size:15px;border-radius:2px;outline:none;transition:border-color .3s}
-  form input:focus,form select:focus,form textarea:focus{border-color:var(--gold)}
-  form textarea{min-height:130px;resize:vertical}
-  form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C6A15B' fill='none' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center}
-  .form-note{font-size:13px;color:var(--muted);margin-top:14px}
+  /* CONTACT */
+  #contact{padding:170px 0 150px;border-top:1px solid var(--hair);text-align:center}
+  #contact h2{font-size:clamp(38px,5.5vw,72px);margin-bottom:26px}
+  #contact h2 em{font-style:italic;color:var(--gold-soft)}
+  #contact .lede{color:var(--muted);margin-bottom:70px;font-size:16px}
+  .contact-cols{display:grid;grid-template-columns:1fr 1fr;gap:80px;text-align:left;max-width:1000px;margin:0 auto}
+  .c-block{margin-bottom:36px}
+  .c-block h4{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:500}
+  .c-block p,.c-block a{font-size:17px;color:var(--ivory);line-height:1.9}
+  .c-block a{border-bottom:1px solid var(--hair);transition:color .3s,border-color .3s}
+  .c-block a:hover{color:var(--gold-soft);border-color:var(--gold)}
+  .btn{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-soft);border:1px solid rgba(166,140,82,.5);padding:20px 44px;transition:background .4s,color .4s,border-color .4s;background:transparent;cursor:pointer;font-family:var(--sans);font-weight:400}
+  .btn:hover{background:var(--gold);border-color:var(--gold);color:#101010}
+  form{text-align:left}
+  .field{margin-bottom:34px}
+  .field label{display:block;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(236,231,216,.22);color:var(--ivory);padding:14px 0;font-family:var(--sans);font-weight:300;font-size:16px;outline:none;transition:border-color .35s;border-radius:0}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+  .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23A68C52' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;cursor:pointer}
+  .field select option{background:#131316}
+  .field textarea{min-height:110px;resize:vertical}
+  .form-note{font-size:13px;color:var(--muted);margin-top:18px}
 
-  /* ---------- FOOTER ---------- */
-  footer{border-top:1px solid var(--line);padding:40px 0}
-  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  .foot .brand{font-size:20px}
-  .foot p{font-size:12px;color:var(--muted);letter-spacing:.08em}
+  /* FOOTER */
+  footer{border-top:1px solid var(--hair);padding:44px 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .foot .brand{font-size:19px}
+  .foot p{font-size:11px;letter-spacing:.14em;color:var(--muted)}
 
-  /* ---------- FLOATING WHATSAPP ---------- */
-  .wa-float{position:fixed;right:22px;bottom:22px;z-index:90;width:60px;height:60px;border-radius:50%;background:#1FA855;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(0,0,0,.5);transition:transform .3s}
-  .wa-float:hover{transform:scale(1.08)}
-  .wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1FA855;animation:pulse 2.2s ease-out infinite}
-  @keyframes pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+  /* FLOATING WHATSAPP — monochrome */
+  .wa-float{position:fixed;right:26px;bottom:26px;z-index:90;width:58px;height:58px;border-radius:50%;background:#151517;border:1px solid rgba(166,140,82,.45);display:flex;align-items:center;justify-content:center;transition:transform .35s,border-color .35s,background .35s}
+  .wa-float:hover{transform:translateY(-3px);border-color:var(--gold);background:#1B1B1E}
+  .wa-float svg{width:26px;height:26px;fill:var(--gold-soft)}
 
   @media(max-width:900px){
     .nav-links{display:none}
     .burger{display:block}
-    .work-cap{grid-template-columns:1fr}
-    .work-name{text-align:left}
-    .svc{grid-template-columns:56px 1fr;grid-template-rows:auto auto}
+    .statement{padding:120px 0}
+    #work{padding-bottom:120px}
+    .work{margin-bottom:110px}
+    .work figcaption{flex-direction:column;gap:14px}
+    .work .meta{text-align:left}
+    .svc{grid-template-columns:44px 1fr;gap:20px}
     .svc p{grid-column:2}
-    .svc-arrow{display:none}
-    .about-grid,.contact-grid{grid-template-columns:1fr;gap:50px}
-    .about-img img{height:420px}
-    section{padding:80px 0}
-    .hero-meta{gap:24px}
+    .about-grid,.contact-cols{grid-template-columns:1fr;gap:60px}
+    .about-img img{height:440px}
+    #services,#about,#contact{padding:110px 0}
+    .wrap{padding:0 24px}
   }
 </style>
 </head>
@@ -169,133 +157,122 @@
 
 <header id="header">
   <div class="wrap nav">
-    <a class="brand" href="#top">VOLENTE<span>.</span></a>
+    <a class="brand" href="#top">VOLENTE<i>.</i></a>
     <nav class="nav-links">
       <a href="#work">Work</a>
       <a href="#services">Services</a>
-      <a href="#about">About</a>
+      <a href="#about">Studio</a>
       <a href="#contact">Contact</a>
-      <a class="nav-phone" href="tel:+916909689258">69096 89258</a>
+      <a class="tel" href="tel:+916909689258">+91 69096 89258</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#work">Work</a>
   <a href="#services">Services</a>
-  <a href="#about">About</a>
+  <a href="#about">Studio</a>
   <a href="#contact">Contact</a>
-  <a class="gold" href="tel:+916909689258">69096 89258</a>
+  <a class="tel" href="tel:+916909689258">+91 69096 89258</a>
 </div>
 
 <!-- HERO -->
 <div class="hero" id="top">
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Premium living room interior designed by Volente">
+    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1920&q=80" alt="Interior by Volente">
   </div>
   <div class="hero-shade"></div>
-  <div class="wrap hero-content">
-    <p class="eyebrow reveal">Interior Design · Construction · Shillong</p>
+  <div class="wrap hero-inner">
+    <p class="label reveal">Interior Design · Construction · Shillong</p>
     <h1 class="reveal">Spaces that feel <em>made for you.</em></h1>
-    <p class="sub reveal">Volente designs and builds homes, workplaces and commercial spaces across Shillong — from a single room refresh to complete turnkey construction, finished to a premium standard.</p>
-    <div class="cta-row reveal">
-      <a class="btn btn-gold" href="#work">View Our Work</a>
-      <a class="btn btn-ghost" href="https://wa.me/916909689258?text=Hi%20Volente%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp Us</a>
-    </div>
-    <div class="hero-meta reveal">
-      <div>Based in<b>Shillong, Meghalaya</b></div>
-      <div>Led by<b>Volente Carlson Buam</b></div>
-      <div>From design to<b>Turnkey Handover</b></div>
-    </div>
+    <p class="reveal">Volente designs and builds homes and workplaces across Shillong — from a single room to complete turnkey construction.</p>
+    <a class="quiet-link reveal" href="#work">View selected work <span>↓</span></a>
   </div>
 </div>
 
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track" id="marqueeTrack">
-    <span><i>◆</i>Interior Design</span><span><i>◆</i>Construction Work</span><span><i>◆</i>Wall Panelling</span><span><i>◆</i>Ceiling Designs &amp; Lighting</span><span><i>◆</i>UPVC Doors &amp; Windows</span><span><i>◆</i>Modular Kitchen</span><span><i>◆</i>Real Estate</span><span><i>◆</i>Property Solutions</span>
+<!-- STATEMENT -->
+<div class="statement">
+  <div class="wrap narrow reveal">
+    <p>Design and construction, <em>under one roof</em> — so what is drawn is what gets built.</p>
   </div>
 </div>
 
 <!-- WORK -->
 <section id="work">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Selected Work</p>
+    <div class="work-head reveal">
+      <p class="label">Selected Work</p>
       <h2>Every project has <em>a story.</em></h2>
-      <p>A few recent spaces we've designed and built across Shillong — each one shaped around the people who live and work in it.</p>
     </div>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Modern residence exterior and interiors"></div>
-      <div class="work-cap">
-        <p class="work-story">"A family home where pine wood and soft daylight do all the talking — calm rooms built for slow Shillong mornings."</p>
-        <div class="work-name"><h3>Pinewood Residence</h3><p>Laitumkhrah, Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Pinewood Residence">
+      <figcaption>
+        <p class="story">"A family home where pine wood and soft daylight do all the talking — calm rooms built for slow Shillong mornings."</p>
+        <div class="meta"><h3>Pinewood Residence</h3><p>Laitumkhrah, Shillong</p></div>
+      </figcaption>
+    </figure>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" alt="Warm modern living room"></div>
-      <div class="work-cap">
-        <p class="work-story">"Teak panelling, brass details and one long window facing the hills — a living room designed around evening light."</p>
-        <div class="work-name"><h3>The Teak House</h3><p>Nongmynsong, Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" alt="The Teak House">
+      <figcaption>
+        <p class="story">"Teak panelling, brass details and one long window facing the hills — a living room designed around evening light."</p>
+        <div class="meta"><h3>The Teak House</h3><p>Nongmynsong, Shillong</p></div>
+      </figcaption>
+    </figure>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80" alt="Contemporary lounge interior"></div>
-      <div class="work-cap">
-        <p class="work-story">"A compact city apartment opened up with mirrors, cove lighting and a palette borrowed from the Khasi highlands."</p>
-        <div class="work-name"><h3>Cloudline Apartment</h3><p>Nongthymmai, Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80" alt="Cloudline Apartment">
+      <figcaption>
+        <p class="story">"A compact city apartment opened up with mirrors, cove lighting and a palette borrowed from the Khasi highlands."</p>
+        <div class="meta"><h3>Cloudline Apartment</h3><p>Nongthymmai, Shillong</p></div>
+      </figcaption>
+    </figure>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1600&q=80" alt="Modular kitchen"></div>
-      <div class="work-cap">
-        <p class="work-story">"A kitchen built for someone who actually cooks — deep storage, stone counters and task lighting exactly where it matters."</p>
-        <div class="work-name"><h3>Oakline Kitchen</h3><p>Laban, Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1600&q=80" alt="Oakline Kitchen">
+      <figcaption>
+        <p class="story">"A kitchen built for someone who actually cooks — deep storage, stone counters and task lighting exactly where it matters."</p>
+        <div class="meta"><h3>Oakline Kitchen</h3><p>Laban, Shillong</p></div>
+      </figcaption>
+    </figure>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" alt="Reading corner with armchair"></div>
-      <div class="work-cap">
-        <p class="work-story">"One quiet corner, one good chair, one warm lamp — proof that a room doesn't need to shout to feel luxurious."</p>
-        <div class="work-name"><h3>The Reading Room</h3><p>Mawlai, Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" alt="The Reading Room">
+      <figcaption>
+        <p class="story">"One quiet corner, one good chair, one warm lamp — proof that a room doesn't need to shout to feel luxurious."</p>
+        <div class="meta"><h3>The Reading Room</h3><p>Mawlai, Shillong</p></div>
+      </figcaption>
+    </figure>
 
-    <article class="work-card reveal">
-      <div class="work-img"><img loading="lazy" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1600&q=80" alt="Serene bedroom interior"></div>
-      <div class="work-cap">
-        <p class="work-story">"Upholstered panels, layered curtains and dimmable light — a bedroom tuned for rest, down to the last switch."</p>
-        <div class="work-name"><h3>Hillside Suite</h3><p>Upper Shillong</p></div>
-      </div>
-    </article>
+    <figure class="work reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1600&q=80" alt="Hillside Suite">
+      <figcaption>
+        <p class="story">"Upholstered panels, layered curtains and dimmable light — a bedroom tuned for rest, down to the last switch."</p>
+        <div class="meta"><h3>Hillside Suite</h3><p>Upper Shillong</p></div>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">What We Do</p>
+    <div class="svc-head reveal">
+      <p class="label">Services</p>
       <h2>One team, <em>every trade.</em></h2>
-      <p>Design, build and finish — handled under one roof, so you deal with one accountable team from first sketch to final handover.</p>
+      <p>Design, build and finish — handled by one accountable team, from first sketch to final handover.</p>
     </div>
-    <div class="svc-list">
-      <div class="svc reveal"><div class="svc-num">01</div><h3>Interior Design</h3><p>Complete space planning and styling for homes, offices and commercial spaces — layouts, materials, colours and furnishings, designed around how you live and work.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">02</div><h3>Construction Work</h3><p>Residential and commercial construction executed with strict quality control — structural work, masonry and finishing, managed end to end.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">03</div><h3>Wall Panelling</h3><p>Designer wall panelling in wood, laminate, louvers and textured finishes — the fastest way to give any room a premium character.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">04</div><h3>Ceiling Designs with Lighting</h3><p>False ceilings, cove and profile lighting, chandeliers and smart lighting layouts that transform the mood of a space after dark.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">05</div><h3>UPVC Doors &amp; Windows</h3><p>Weather-proof, low-maintenance UPVC doors and windows — built for Shillong's rain and cold, with clean modern profiles.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">06</div><h3>Modular Kitchen</h3><p>Custom modular kitchens designed around your cooking — smart storage, durable shutters, stone counters and branded fittings.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">07</div><h3>Real Estate</h3><p>Buy, sell and develop property with guidance from a team that understands construction value — not just listings.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">08</div><h3>Property Solutions</h3><p>End-to-end help with property documentation, valuation guidance and project consulting for owners and investors.</p><div class="svc-arrow">→</div></div>
-      <div class="svc reveal"><div class="svc-num">09</div><h3>Material Supply</h3><p>Reliable supply of quality construction materials to sites across the region — sourced right, delivered on time.</p><div class="svc-arrow">→</div></div>
-    </div>
+    <div class="reveal"><div class="svc"><div class="n">01</div><h3>Interior Design</h3><p>Complete space planning and styling for homes, offices and commercial spaces — layouts, materials, colours and furnishings.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">02</div><h3>Construction Work</h3><p>Residential and commercial construction with strict quality control — structural work, masonry and finishing, managed end to end.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">03</div><h3>Wall Panelling</h3><p>Designer panelling in wood, laminate, louvers and textured finishes — the fastest way to give a room its character.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">04</div><h3>Ceiling Designs &amp; Lighting</h3><p>False ceilings, cove and profile lighting, and lighting layouts that transform a space after dark.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">05</div><h3>UPVC Doors &amp; Windows</h3><p>Weather-proof, low-maintenance UPVC — built for Shillong's rain and cold, with clean modern profiles.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">06</div><h3>Modular Kitchen</h3><p>Custom kitchens designed around your cooking — smart storage, durable shutters, stone counters and branded fittings.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">07</div><h3>Real Estate</h3><p>Buy, sell and develop property with guidance from a team that understands construction value — not just listings.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">08</div><h3>Property Solutions</h3><p>End-to-end help with property documentation, valuation guidance and project consulting for owners and investors.</p></div></div>
+    <div class="reveal"><div class="svc"><div class="n">09</div><h3>Material Supply</h3><p>Reliable supply of quality construction materials to sites across the region — sourced right, delivered on time.</p></div></div>
   </div>
 </section>
 
@@ -303,14 +280,14 @@
 <section id="about">
   <div class="wrap about-grid">
     <div class="about-img reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1200&q=80" alt="Premium interior detail">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80" alt="Interior detail">
     </div>
     <div class="about-copy reveal">
-      <p class="eyebrow">About Volente</p>
+      <p class="label">The Studio</p>
       <h2>Built on craft, <em>run on trust.</em></h2>
-      <p>Volente is a Shillong-based design and construction studio led by Volente Carlson Buam. We handle everything a space needs — interiors, construction, finishes, doors and windows, kitchens — along with real estate and property solutions.</p>
-      <p>Because design and execution sit with one team, nothing gets lost between the drawing and the site. What we promise on paper is what gets built — finished to a standard we'd put our own name on.</p>
-      <p class="about-sign">— Volente Carlson Buam</p>
+      <p>Volente is a Shillong-based design and construction studio led by Volente Carlson Buam — covering interiors, construction, finishes, doors and windows, kitchens, alongside real estate and property solutions.</p>
+      <p>Because design and execution sit with one team, nothing gets lost between the drawing and the site. What is promised on paper is what gets built.</p>
+      <p class="sign">— Volente Carlson Buam</p>
     </div>
   </div>
 </section>
@@ -318,31 +295,27 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Get In Touch</p>
-      <h2>Let's talk about <em>your space.</em></h2>
-      <p>Call, WhatsApp, or send an enquiry — we usually respond within a day.</p>
-    </div>
-    <div class="contact-grid">
+    <p class="label reveal">Contact</p>
+    <h2 class="reveal">Let's talk about <em>your space.</em></h2>
+    <p class="lede reveal">Call, message, or send an enquiry — we usually respond within a day.</p>
+    <div class="contact-cols">
       <div class="reveal">
-        <div class="c-item"><h4>Visit</h4><p>Lane-3, Dongkadiang, Nongmynsong,<br>Shillong 793019, Meghalaya</p></div>
-        <div class="c-item"><h4>Call</h4><a href="tel:+916909689258">+91 69096 89258</a></div>
-        <div class="c-item"><h4>WhatsApp</h4><a class="wa-big" href="https://wa.me/916909689258?text=Hi%20Volente%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
-          Chat on WhatsApp</a></div>
+        <div class="c-block"><h4>Visit</h4><p>Lane-3, Dongkadiang, Nongmynsong,<br>Shillong 793019, Meghalaya</p></div>
+        <div class="c-block"><h4>Call</h4><a href="tel:+916909689258">+91 69096 89258</a></div>
+        <div class="c-block"><h4>WhatsApp</h4><a href="https://wa.me/916909689258?text=Hi%20Volente%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat with us directly</a></div>
       </div>
       <div class="reveal">
         <form id="enquiryForm">
-          <div class="field"><label for="fName">Your Name</label><input id="fName" type="text" placeholder="Full name" required></div>
-          <div class="field"><label for="fPhone">Phone Number</label><input id="fPhone" type="tel" placeholder="Your mobile number" required></div>
-          <div class="field"><label for="fService">I'm interested in</label>
+          <div class="field"><label for="fName">Name</label><input id="fName" type="text" placeholder="Your full name" required></div>
+          <div class="field"><label for="fPhone">Phone</label><input id="fPhone" type="tel" placeholder="Your mobile number" required></div>
+          <div class="field"><label for="fService">Service</label>
             <select id="fService">
-              <option>Interior Design</option><option>Construction Work</option><option>Wall Panelling</option><option>Ceiling Designs with Lighting</option><option>UPVC Doors &amp; Windows</option><option>Modular Kitchen</option><option>Real Estate</option><option>Property Solutions</option><option>Material Supply</option><option>Something else</option>
+              <option>Interior Design</option><option>Construction Work</option><option>Wall Panelling</option><option>Ceiling Designs &amp; Lighting</option><option>UPVC Doors &amp; Windows</option><option>Modular Kitchen</option><option>Real Estate</option><option>Property Solutions</option><option>Material Supply</option><option>Something else</option>
             </select>
           </div>
-          <div class="field"><label for="fMsg">Tell us about your project</label><textarea id="fMsg" placeholder="Location, size, what you'd like done…"></textarea></div>
-          <button class="btn btn-gold" type="submit" style="width:100%;justify-content:center">Send Enquiry via WhatsApp</button>
-          <p class="form-note">Submitting opens WhatsApp with your enquiry pre-written — just press send.</p>
+          <div class="field"><label for="fMsg">Project</label><textarea id="fMsg" placeholder="Location, size, what you'd like done…"></textarea></div>
+          <button class="btn" type="submit">Send via WhatsApp</button>
+          <p class="form-note">Opens WhatsApp with your enquiry pre-written — just press send.</p>
         </form>
       </div>
     </div>
@@ -351,46 +324,37 @@
 
 <footer>
   <div class="wrap foot">
-    <a class="brand" href="#top">VOLENTE<span>.</span></a>
-    <p>© 2026 Volente · Shillong, Meghalaya · +91 69096 89258</p>
+    <a class="brand" href="#top">VOLENTE<i>.</i></a>
+    <p>© 2026 Volente · Shillong, Meghalaya</p>
   </div>
 </footer>
 
 <a class="wa-float" href="https://wa.me/916909689258?text=Hi%20Volente%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
 </a>
 
 <script>
-  // Sticky header
   const header = document.getElementById('header');
   addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 40), {passive:true});
 
-  // Mobile menu
   const burger = document.getElementById('burger'), menu = document.getElementById('mobileMenu');
   burger.addEventListener('click', () => {
     const open = menu.classList.toggle('open');
-    burger.children[0].style.transform = open ? 'rotate(45deg) translate(5px,6px)' : '';
-    burger.children[1].style.opacity = open ? '0' : '1';
-    burger.children[2].style.transform = open ? 'rotate(-45deg) translate(5px,-6px)' : '';
+    burger.children[0].style.transform = open ? 'rotate(45deg) translate(4px,4px)' : '';
+    burger.children[1].style.transform = open ? 'rotate(-45deg) translate(4px,-4px)' : '';
   });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.children[0].style.transform=''; burger.children[1].style.opacity='1'; burger.children[2].style.transform=''; }));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.children[0].style.transform=''; burger.children[1].style.transform=''; }));
 
-  // Duplicate marquee for seamless loop
-  const track = document.getElementById('marqueeTrack');
-  track.innerHTML += track.innerHTML;
-
-  // Reveal on scroll
-  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), io.unobserve(e.target))), {threshold:.12});
+  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), io.unobserve(e.target))), {threshold:.1});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // Enquiry form -> WhatsApp
   document.getElementById('enquiryForm').addEventListener('submit', e => {
     e.preventDefault();
     const n = document.getElementById('fName').value.trim();
     const p = document.getElementById('fPhone').value.trim();
     const s = document.getElementById('fService').value;
     const m = document.getElementById('fMsg').value.trim();
-    const text = `Hi Volente,%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AInterested in: ${encodeURIComponent(s)}%0ADetails: ${encodeURIComponent(m || '—')}`;
+    const text = `Hi Volente,%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0ADetails: ${encodeURIComponent(m || '—')}`;
     open(`https://wa.me/916909689258?text=${text}`, '_blank');
   });
 </script>
