@@ -74,8 +74,13 @@
   .work-head h2 em{font-style:italic;color:var(--gold-soft)}
   .work{margin-bottom:150px}
   .work:last-child{margin-bottom:0}
-  .work img{width:100%;height:clamp(340px,72vh,680px);object-fit:cover}
-  .work figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;margin-top:30px;flex-wrap:wrap}
+  .work-media{position:relative;overflow:hidden}
+  .work-media img{width:100%;height:clamp(340px,72vh,680px);object-fit:cover;transform:scale(1.1);transition:transform 1.8s cubic-bezier(.2,.6,.2,1)}
+  .work-veil{position:absolute;inset:0;background:#17171A;transform:scaleX(1);transform-origin:right;transition:transform 1.4s cubic-bezier(.75,0,.2,1);z-index:2}
+  .work-veil::after{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--gold)}
+  .inview .work-veil{transform:scaleX(0)}
+  .inview .work-media img{transform:scale(1)}
+  .work figcaption{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;position:relative;z-index:3;background:var(--ink);border:1px solid var(--hair);padding:44px 48px;margin:-110px 56px 0}
   .work .story{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,27px);color:#D8D1BE;max-width:30ch;line-height:1.5}
   .work .meta{text-align:right;flex-shrink:0}
   .work .meta h3{font-family:var(--serif);font-weight:500;font-size:23px;letter-spacing:.04em;margin-bottom:8px}
@@ -96,7 +101,7 @@
   /* ABOUT */
   #about{padding:170px 0}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
-  .about-img img{height:600px;width:100%;object-fit:cover}
+  .about-img .work-media img{height:600px}
   .about-copy h2{font-size:clamp(34px,4.5vw,56px);margin-bottom:34px}
   .about-copy h2 em{font-style:italic;color:var(--gold-soft)}
   .about-copy p{color:#BDB6A4;margin-bottom:22px;font-size:16px;max-width:46ch}
@@ -142,12 +147,12 @@
     .statement{padding:120px 0}
     #work{padding-bottom:120px}
     .work{margin-bottom:110px}
-    .work figcaption{flex-direction:column;gap:14px}
+    .work figcaption{flex-direction:column;gap:14px;margin:-70px 20px 0;padding:32px 28px}
     .work .meta{text-align:left}
     .svc{grid-template-columns:44px 1fr;gap:20px}
     .svc p{grid-column:2}
     .about-grid,.contact-cols{grid-template-columns:1fr;gap:60px}
-    .about-img img{height:440px}
+    .about-img .work-media img{height:440px}
     #services,#about,#contact{padding:110px 0}
     .wrap{padding:0 24px}
   }
@@ -207,7 +212,7 @@
     </div>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Pinewood Residence">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Pinewood Residence"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"A family home where pine wood and soft daylight do all the talking — calm rooms built for slow Shillong mornings."</p>
         <div class="meta"><h3>Pinewood Residence</h3><p>Laitumkhrah, Shillong</p></div>
@@ -215,7 +220,7 @@
     </figure>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" alt="The Teak House">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80" alt="The Teak House"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"Teak panelling, brass details and one long window facing the hills — a living room designed around evening light."</p>
         <div class="meta"><h3>The Teak House</h3><p>Nongmynsong, Shillong</p></div>
@@ -223,7 +228,7 @@
     </figure>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80" alt="Cloudline Apartment">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80" alt="Cloudline Apartment"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"A compact city apartment opened up with mirrors, cove lighting and a palette borrowed from the Khasi highlands."</p>
         <div class="meta"><h3>Cloudline Apartment</h3><p>Nongthymmai, Shillong</p></div>
@@ -231,7 +236,7 @@
     </figure>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1600&q=80" alt="Oakline Kitchen">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1600&q=80" alt="Oakline Kitchen"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"A kitchen built for someone who actually cooks — deep storage, stone counters and task lighting exactly where it matters."</p>
         <div class="meta"><h3>Oakline Kitchen</h3><p>Laban, Shillong</p></div>
@@ -239,7 +244,7 @@
     </figure>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" alt="The Reading Room">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80" alt="The Reading Room"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"One quiet corner, one good chair, one warm lamp — proof that a room doesn't need to shout to feel luxurious."</p>
         <div class="meta"><h3>The Reading Room</h3><p>Mawlai, Shillong</p></div>
@@ -247,7 +252,7 @@
     </figure>
 
     <figure class="work reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1600&q=80" alt="Hillside Suite">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1600&q=80" alt="Hillside Suite"><div class="work-veil"></div></div>
       <figcaption>
         <p class="story">"Upholstered panels, layered curtains and dimmable light — a bedroom tuned for rest, down to the last switch."</p>
         <div class="meta"><h3>Hillside Suite</h3><p>Upper Shillong</p></div>
@@ -280,7 +285,7 @@
 <section id="about">
   <div class="wrap about-grid">
     <div class="about-img reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80" alt="Interior detail">
+      <div class="work-media"><img loading="lazy" src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80" alt="Interior detail"><div class="work-veil"></div></div>
     </div>
     <div class="about-copy reveal">
       <p class="label">The Studio</p>
@@ -347,6 +352,8 @@
 
   const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('visible'), io.unobserve(e.target))), {threshold:.1});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  const io2 = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && (e.target.classList.add('inview'), io2.unobserve(e.target))), {threshold:.25});
+  document.querySelectorAll('.work, .about-img').forEach(el => io2.observe(el));
 
   document.getElementById('enquiryForm').addEventListener('submit', e => {
     e.preventDefault();
