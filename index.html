@@ -135,6 +135,8 @@
   .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
   .foot .brand{font-size:19px}
   .foot p{font-size:11px;letter-spacing:.14em;color:var(--muted)}
+  .foot .credit a{color:var(--gold-soft);border-bottom:1px solid var(--hair);transition:color .3s,border-color .3s}
+  .foot .credit a:hover{color:var(--ivory);border-color:var(--gold)}
 
   /* FLOATING WHATSAPP — monochrome */
   .wa-float{position:fixed;right:26px;bottom:26px;z-index:90;width:58px;height:58px;border-radius:50%;background:#151517;border:1px solid rgba(166,140,82,.45);display:flex;align-items:center;justify-content:center;transition:transform .35s,border-color .35s,background .35s}
@@ -331,6 +333,7 @@
   <div class="wrap foot">
     <a class="brand" href="#top">VOLENTE<i>.</i></a>
     <p>© 2026 Volente · Shillong, Meghalaya</p>
+    <p class="credit">Built by <a href="https://sodoku.co" target="_blank" rel="noopener">sodoku.co</a></p>
   </div>
 </footer>
 
