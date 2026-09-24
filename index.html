@@ -51,13 +51,12 @@
   .mobile-menu a.tel{font-size:20px;color:var(--gold-soft);font-family:var(--sans);letter-spacing:.2em}
 
   /* HERO */
-  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end}
-  .hero-bg{position:absolute;inset:0}
-  .hero-bg img{width:100%;height:100%;object-fit:cover}
-  .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.45) 0%,rgba(13,13,15,0) 55%,rgba(13,13,15,.88) 100%)}
-  .hero-band{position:relative;z-index:2;width:100%;background:var(--black);border-top:1px solid var(--hair)}
-  .hero-inner{padding:70px 0 80px}
-  .hero h1{font-size:clamp(46px,7vw,96px);max-width:12ch;margin:0 0 30px}
+  .hero{position:relative;min-height:100svh;display:grid;grid-template-columns:1fr 1fr}
+  .hero-panel{background:var(--black);display:flex;align-items:center;border-right:1px solid var(--hair);padding:120px 7vw 80px}
+  .hero-panel-inner{max-width:540px}
+  .hero-bg{position:relative;min-height:100svh}
+  .hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero h1{font-size:clamp(42px,4.6vw,76px);margin:0 0 28px}
   .hero h1 em{font-style:italic;color:var(--gold-soft)}
   .hero p{max-width:46ch;color:#CFC9B9;font-size:16px;margin-bottom:44px}
   .quiet-link{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ivory);border-bottom:1px solid var(--gold);padding-bottom:10px;transition:color .35s,gap .35s}
@@ -158,6 +157,9 @@
     .about-img .work-media img{height:440px}
     #services,#about,#contact{padding:110px 0}
     .wrap{padding:0 24px}
+    .hero{grid-template-columns:1fr}
+    .hero-bg{min-height:54svh;order:-1}
+    .hero-panel{border-right:0;padding:72px 24px 84px}
   }
 </style>
 </head>
@@ -187,16 +189,15 @@
 
 <!-- HERO -->
 <div class="hero" id="top">
-  <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1920&q=80" alt="Interior by Volente">
-  </div>
-  <div class="hero-shade"></div>
-  <div class="hero-band"><div class="wrap hero-inner">
+  <div class="hero-panel"><div class="hero-panel-inner">
     <p class="label reveal">Interior Design · Construction · Shillong</p>
     <h1 class="reveal">Spaces that feel <em>made for you.</em></h1>
     <p class="reveal">Volente designs and builds homes and workplaces across Shillong — from a single room to complete turnkey construction.</p>
     <a class="quiet-link reveal" href="#work">View selected work <span>↓</span></a>
   </div></div>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80" alt="Interior by Volente">
+  </div>
 </div>
 
 <!-- STATEMENT -->
