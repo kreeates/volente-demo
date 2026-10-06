@@ -37,7 +37,7 @@
   header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,15,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
   .brand-logo{display:inline-flex;align-items:center;gap:14px}
-  .brand-logo img{height:44px;width:auto;mix-blend-mode:screen}
+  .brand-logo img{height:40px;width:auto;display:block}
   .brand-logo span{font-family:var(--serif);font-size:19px;letter-spacing:.18em;font-weight:500}
   .nav-links{display:flex;gap:40px;align-items:center}
   .nav-links a{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);transition:color .35s}
@@ -152,7 +152,7 @@
   /* FOOTER */
   footer{border-top:1px solid var(--hair);padding:56px 0 44px}
   .foot{display:flex;flex-direction:column;align-items:flex-start;gap:32px}
-  .foot-logo{width:150px;mix-blend-mode:screen}
+  .foot-logo{width:150px}
   .foot-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;width:100%}
   .foot p{font-size:11px;letter-spacing:.14em;color:var(--muted)}
 
@@ -188,14 +188,13 @@
 
 <header id="header">
   <div class="wrap nav">
-    <a class="brand-logo" href="#top" aria-label="Volente Solutions"><img src="logo-mark.jpg" alt="Volente Solutions"><span>Volente Solutions</span></a>
+    <a class="brand-logo" href="#top" aria-label="Volente Solutions"><img src="logo-mark.png" alt="Volente Solutions"><span>Volente Solutions</span></a>
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#real-estate">Real Estate</a>
       <a href="#work">Work</a>
       <a href="#about">Studio</a>
       <a href="#contact">Contact</a>
-      <a class="tel" href="tel:+916909689258">+91 69096 89258</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
   </div>
@@ -207,7 +206,6 @@
   <a href="#work">Work</a>
   <a href="#about">Studio</a>
   <a href="#contact">Contact</a>
-  <a class="tel" href="tel:+916909689258">+91 69096 89258</a>
 </div>
 
 <!-- HERO -->
@@ -394,8 +392,7 @@
     <div class="contact-cols">
       <div class="reveal">
         <div class="c-block"><h4>Visit</h4><p>Lane-3, Dongkadiang, Nongmynsong,<br>Shillong 793019, Meghalaya</p></div>
-        <div class="c-block"><h4>Call</h4><a href="tel:+916909689258">+91 69096 89258</a></div>
-        <div class="c-block"><h4>WhatsApp</h4><a href="https://wa.me/918787613643?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat with us directly</a></div>
+        <div class="c-block"><h4>WhatsApp</h4><a href="https://wa.me/918787613643?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">+91 87876 13643</a></div>
       </div>
       <div class="reveal">
         <form id="enquiryForm">
@@ -417,7 +414,7 @@
 
 <footer>
   <div class="wrap foot">
-    <img class="foot-logo" src="logo-full.jpg" alt="Volente Solutions">
+    <img class="foot-logo" src="logo-full.png" alt="Volente Solutions">
     <div class="foot-row">
       <p>© 2026 Volente Solutions · Shillong, Meghalaya</p>
       <p class="credit">Built by sodoku</p>
