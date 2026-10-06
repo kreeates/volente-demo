@@ -36,8 +36,9 @@
   /* NAV */
   header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,13,15,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-  .brand-logo{display:inline-flex;align-items:center}
+  .brand-logo{display:inline-flex;align-items:center;gap:14px}
   .brand-logo img{height:44px;width:auto;mix-blend-mode:screen}
+  .brand-logo span{font-family:var(--serif);font-size:19px;letter-spacing:.18em;font-weight:500}
   .nav-links{display:flex;gap:40px;align-items:center}
   .nav-links a{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);transition:color .35s}
   .nav-links a:hover{color:var(--ivory)}
@@ -187,7 +188,7 @@
 
 <header id="header">
   <div class="wrap nav">
-    <a class="brand-logo" href="#top" aria-label="Volente Solutions"><img src="logo-mark.jpg" alt="Volente Solutions"></a>
+    <a class="brand-logo" href="#top" aria-label="Volente Solutions"><img src="logo-mark.jpg" alt="Volente Solutions"><span>Volente Solutions</span></a>
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#real-estate">Real Estate</a>
@@ -218,7 +219,7 @@
     <a class="quiet-link reveal" href="#work">View selected work <span>↓</span></a>
   </div></div>
   <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1600&q=80" alt="Interior by Volente Solutions">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80" alt="Aesthetic interior by Volente Solutions">
   </div>
 </div>
 
@@ -305,7 +306,7 @@
         <li>Professional real estate assistance</li>
       </ul>
       <p class="re-close">Your property. Your deal. Your decision.</p>
-      <a class="btn" href="https://wa.me/916909689258?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20ask%20about%20a%20property." target="_blank" rel="noopener">Ask about a property</a>
+      <a class="btn" href="https://wa.me/918787613643?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20ask%20about%20a%20property." target="_blank" rel="noopener">Ask about a property</a>
     </div>
   </div>
 </section>
@@ -394,7 +395,7 @@
       <div class="reveal">
         <div class="c-block"><h4>Visit</h4><p>Lane-3, Dongkadiang, Nongmynsong,<br>Shillong 793019, Meghalaya</p></div>
         <div class="c-block"><h4>Call</h4><a href="tel:+916909689258">+91 69096 89258</a></div>
-        <div class="c-block"><h4>WhatsApp</h4><a href="https://wa.me/916909689258?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat with us directly</a></div>
+        <div class="c-block"><h4>WhatsApp</h4><a href="https://wa.me/918787613643?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Chat with us directly</a></div>
       </div>
       <div class="reveal">
         <form id="enquiryForm">
@@ -424,7 +425,7 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/916909689258?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="wa-float" href="https://wa.me/918787613643?text=Hi%20Volente%20Solutions%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
 </a>
 
@@ -452,7 +453,7 @@
     const s = document.getElementById('fService').value;
     const m = document.getElementById('fMsg').value.trim();
     const text = `Hi Volente Solutions,%0A%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0ADetails: ${encodeURIComponent(m || '—')}`;
-    open(`https://wa.me/916909689258?text=${text}`, '_blank');
+    open(`https://wa.me/918787613643?text=${text}`, '_blank');
   });
 </script>
 </body>
